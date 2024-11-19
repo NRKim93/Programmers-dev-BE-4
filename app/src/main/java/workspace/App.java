@@ -3,32 +3,13 @@
  */
 package workspace;
 
-import java.util.Scanner;
+import workspace.wisesaying.WiseSayingMain;
 
 public class App {
-    // public String getGreeting() {
-    //     return "Hello World!";
-    // }
 
-    Scanner sc = new Scanner(System.in);
-    boolean startFlg = true;
-    String cmd = "";
-    String wiseSaying_v = "";
 
-    public void wiseSaying() {
-        System.out.println("== 명언 앱 ==");
-        while(startFlg) {
-            System.out.print("명령) ");
-            cmd = sc.nextLine();
-
-            if (cmd.equals("end")) startFlg = false;
-
-        }
-
-    }
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception  {
         //System.out.println(new App().getGreeting());
-        new App().wiseSaying();
+        new WiseSayingMain().Main();
     }
 }
