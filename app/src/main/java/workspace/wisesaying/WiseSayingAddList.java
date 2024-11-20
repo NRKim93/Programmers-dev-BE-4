@@ -27,18 +27,13 @@ public class WiseSayingAddList {
         );
 
         try {
-            if (id_f.createNewFile()) {
                 BufferedWriter bw = new BufferedWriter(new FileWriter(id_f));
                 bw.write(Integer.toString(id));
                 bw.close();
-            }
 
-            if (json_f.createNewFile()) {
-                BufferedWriter bw = new BufferedWriter(new FileWriter(json_f));
-                //bw.write("id : " + id + "\n" + "content : " + wise_saying_v + "\n" + "author : " + authur_v);
-                bw.write(json);
+                bw = new BufferedWriter(new FileWriter(json_f,true));
+                bw.write(json + "\n");
                 bw.close();
-            }
 
         } catch (IOException e) {
             throw new RuntimeException(e);
