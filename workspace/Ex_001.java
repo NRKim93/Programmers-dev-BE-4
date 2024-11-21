@@ -1,5 +1,5 @@
 class Warrior {
-    public static void Attack(String name, String wepon) {
+    public  void Attack(String name, String wepon) {
         System.out.println(name + "(이)가 " + wepon + "(으)로 공격합니다.");
     }
     
