@@ -1,22 +1,7 @@
 [
 	{ 
-	 "id ": 1, 
-	 "content ": "1",
-	 "authur ": "2"
-	},
-	{ 
 	 "id ": 2, 
-	 "content ": "2",
-	 "authur ": "3"
-	},
-	{ 
-	 "id ": 3, 
-	 "content ": "3",
-	 "authur ": "4"
-	},
-	{ 
-	 "id ": 4, 
-	 "content ": "4",
-	 "authur ": "5"
+	 "content ": "강남콩",
+	 "authur ": "식물갤"
 	}
 ]

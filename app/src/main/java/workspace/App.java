@@ -3,7 +3,7 @@
  */
 package workspace;
 
-import workspace.wisesaying.WiseSayingMain;
+import workspace.wiseSaying.WiseSayingMain;
 
 public class App {
 

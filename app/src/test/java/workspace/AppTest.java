@@ -4,7 +4,8 @@
 package workspace;
 
 import org.junit.jupiter.api.Test;
-import workspace.wisesaying.WiseSayingMain;
+
+import workspace.wiseSaying.WiseSayingMain;
 
 class AppTest {
     @Test void appHasAGreeting() throws Exception {
