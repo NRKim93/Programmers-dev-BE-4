@@ -41,7 +41,7 @@ class Worrior {
     int age;
     Weapon aWeapon; 
     public void Attack(int ages, String names,String weapon) {
-        System.out.println(age+" 살 전사 " + name + " (이)가 " + weapon + " (으)로 공격합니다. ");
+        System.out.println(ages+" 살 전사 " + names + " (이)가 " + weapon + " (으)로 공격합니다. ");
     }
     
 }

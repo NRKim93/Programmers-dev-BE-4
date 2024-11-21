@@ -10,7 +10,7 @@ import java.io.FileWriter;
 public class WiseSayingBuild {
 
     public static void BuildList() throws Exception{
-        File f = new File("C:\\WorkSpace\\app\\src\\main\\java\\workspace\\db\\wiseSaying\\data.json");
+        File f = new File("C:\\WorkSpace\\WiseSaying\\app\\src\\main\\java\\workspace\\db\\data.json");
         BufferedWriter bw = new BufferedWriter(new FileWriter(f));
 
         try {

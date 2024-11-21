@@ -19,8 +19,8 @@ public class WiseSayingAddList {
         authur_list.add(authur_v);
         wise_saying_list.add(wise_saying_v);
 
-        File json_f = new File("C:\\WorkSpace\\app\\src\\main\\java\\workspace\\db\\wiseSaying\\",id+".json");
-        File id_f = new File("C:\\WorkSpace\\app\\src\\main\\java\\workspace\\db\\wiseSaying\\","lastId"+".txt");
+        File json_f = new File("C:\\WorkSpace\\WiseSaying\\app\\src\\main\\java\\workspace\\db\\",id+".json");
+        File id_f = new File("C:\\WorkSpace\\WiseSaying\\app\\src\\main\\java\\workspace\\db","lastId"+".txt");
 
         String json = String.format(
                 "{ \"id \": %d, \"content \": \"%s\",\"authur\": \"%s\"}", id,wise_saying_v,authur_v
