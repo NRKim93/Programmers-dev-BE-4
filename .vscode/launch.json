@@ -9,14 +9,14 @@
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "vmArgs": "-Dfile.encoding=UTF-8",
+            "vmArgs": "-Dfile.encoding=euc-kr",
         },
         {
             "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "workspace.App",
-            "vmArgs": "-Dfile.encoding=UTF-8",
+            "vmArgs": "-Dfile.encoding=euc-kr",
             "projectName": "app"
         }
     ]

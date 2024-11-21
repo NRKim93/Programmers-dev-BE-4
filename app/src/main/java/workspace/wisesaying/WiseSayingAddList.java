@@ -11,9 +11,9 @@ public class WiseSayingAddList {
 
     public static void AddList() {
         System.out.print("명언 : ");
-        String authur_v = sc.nextLine();
-        System.out.print("작가 : ");
         String wise_saying_v = sc.nextLine();
+        System.out.print("작가 : ");
+        String authur_v = sc.nextLine();
 
         id_list.add(id);
         authur_list.add(authur_v);
@@ -27,18 +27,14 @@ public class WiseSayingAddList {
         );
 
         try {
-            if (id_f.createNewFile()) {
                 BufferedWriter bw = new BufferedWriter(new FileWriter(id_f));
                 bw.write(Integer.toString(id));
                 bw.close();
-            }
 
-            if (json_f.createNewFile()) {
-                BufferedWriter bw = new BufferedWriter(new FileWriter(json_f));
+                bw = new BufferedWriter(new FileWriter(json_f,true));
                 //bw.write("id : " + id + "\n" + "content : " + wise_saying_v + "\n" + "author : " + authur_v);
-                bw.write(json);
+                bw.write(json+"\n");
                 bw.close();
-            }
 
         } catch (IOException e) {
             throw new RuntimeException(e);

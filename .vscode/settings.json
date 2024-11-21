@@ -2,8 +2,5 @@
     "java.configuration.updateBuildConfiguration": "interactive",
     "java.compile.nullAnalysis.mode": "automatic",
     "code-runner.runInTerminal": true,
-    "files.autoGuessEncoding": true,
-    "terminal.integrated.env.windows": {
-        "JAVA_TOOL_OPTIONS" : "-Dfile.encoding=UTF-8"
-    }
+    "files.autoGuessEncoding": true
 }

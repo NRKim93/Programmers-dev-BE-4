@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class WiseSayingMain {
-    public static Scanner sc = new Scanner(System.in);
+    public static Scanner sc = new Scanner(System.in,"euc-kr");
     boolean startFlg = true;
     public static int id = 1;
     String cmd = "";
@@ -13,23 +13,25 @@ public class WiseSayingMain {
     public static List<String> authur_list = new LinkedList<>();
     public static List<String> wise_saying_list = new LinkedList<>();
 
-    public void Main() {
+    public void Main() throws Exception {
         System.out.println("== 명언 앱 ==");
         while (startFlg) {
             System.out.print("명령) ");
             cmd = sc.nextLine();
 
-            if (cmd.equals("종료")) {
+            if (cmd.trim().equals("종료")) {
                 sc.close();
                 startFlg = false;
-            } else if (cmd.equals("등록")) {
+            } else if (cmd.trim().equals("등록")) {
                 WiseSayingAddList.AddList();
-            } else if (cmd.equals("리스트")) {
+            } else if (cmd.trim().equals("목록")) {
                 WiseSayingShowList.ShowList();
-            } else if (cmd.equals("삭제")) {
+            } else if (cmd.trim().equals("삭제")) {
                 WiseSayingDelete.DeleteList();
-            } else if (cmd.equals("수정")) {
+            } else if (cmd.trim().equals("수정")) {
                 WiseSayingEdit.EditList();
+            } else if (cmd.trim().equals("빌드")) {
+                WiseSayingBuild.BuildList();
             }
         }
     }
