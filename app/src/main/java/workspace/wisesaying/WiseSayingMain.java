@@ -183,8 +183,6 @@ class WiseSayingShowList {
             WiseSaying ws = list.get(i);
             System.out.println(ws.id + " / " + ws.author + " / " + ws.wiseSaying);
         }
-
     }
 }
-
 }
