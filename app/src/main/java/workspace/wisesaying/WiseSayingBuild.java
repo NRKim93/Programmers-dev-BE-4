@@ -16,7 +16,7 @@ public class WiseSayingBuild {
         try {
             bw.write("[");
             for(int i = 0; i < id_list.size(); i++) {
-                String json = String.format("\n\t{ \n\t \"id \": %d, \n\t \"content \": \"%s\",\n\t \"authur\": \"%s\"\n\t}", id_list.get(i),wise_saying_list.get(i),authur_list.get(i));
+                String json = String.format("\n\t{ \n\t \"id \": %d, \n\t \"content \": \"%s\",\n\t \"authur \": \"%s\"\n\t}", id_list.get(i),wise_saying_list.get(i),authur_list.get(i));
                 if (i == id_list.size()-1) {
                     bw.write(json);
                 } else {
@@ -26,7 +26,6 @@ public class WiseSayingBuild {
             bw.write("\n]");
             bw.close();
         } catch (Exception e) {
-            // TODO: handle exception
             System.out.println("하하 잘못됐지롱~");
         }
     }

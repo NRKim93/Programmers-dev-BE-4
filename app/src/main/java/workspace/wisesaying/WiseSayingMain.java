@@ -5,11 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class WiseSayingMain {
-<<<<<<< HEAD
-    public static Scanner sc = new Scanner(System.in,"euc-kr");
-=======
     public static Scanner sc = new Scanner(System.in,"EUC-KR");
->>>>>>> master
     boolean startFlg = true;
     public static int id = 1;
     String cmd = "";
@@ -17,19 +13,11 @@ public class WiseSayingMain {
     public static List<String> authur_list = new LinkedList<>();
     public static List<String> wise_saying_list = new LinkedList<>();
 
-<<<<<<< HEAD
     public void Main() throws Exception {
-=======
-    public void Main() throws Exception {       
->>>>>>> master
         System.out.println("== 명언 앱 ==");
         while (startFlg) {
             System.out.print("명령) ");
             cmd = sc.nextLine();
-<<<<<<< HEAD
-
-=======
->>>>>>> master
             if (cmd.trim().equals("종료")) {
                 sc.close();
                 startFlg = false;
