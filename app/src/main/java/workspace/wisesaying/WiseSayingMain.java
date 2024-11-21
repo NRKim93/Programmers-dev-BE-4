@@ -101,7 +101,7 @@ public class WiseSayingMain {
     }
 }
 
-class WiseSayingBuild {
+    class WiseSayingBuild {
 
     public static void BuildList() throws Exception{
         File f = new File("C:\\WorkSpace\\WiseSaying\\app\\src\\main\\java\\workspace\\db\\data.json");
@@ -128,7 +128,7 @@ class WiseSayingBuild {
     
 }
 
-class WiseSayingDelete {
+    class WiseSayingDelete {
 
     public static void DeleteList() {
             System.out.print("삭제? id = ");
@@ -146,43 +146,38 @@ class WiseSayingDelete {
     }
 }
 
-class WiseSayingEdit {
-    public static void EditList() {
+    class WiseSayingEdit {
+        public static void EditList() {
+            System.out.print("수정 ? id = ");
+            String a = sc.nextLine();
+            int idV = Integer.parseInt(a);
+            int idx = idV -1;
+            WiseSaying ws = list.get(idx);
 
-        System.out.print("수정 ? id = ");
-        String a = sc.nextLine();
-        int idV = Integer.parseInt(a);
-        int idx = idV -1;
-        WiseSaying ws = list.get(idx);
+            if(ws.id == idV) {
+                System.out.println("명언(기존) : " + ws.wiseSaying);
+                System.out.print("명언 : ");
+                String wsV = sc.nextLine();
 
-        if(ws.id == idV) {
-            System.out.println("명언(기존) : " + ws.wiseSaying);
-            System.out.print("명언 : ");
-            String wsV = sc.nextLine();
-            //list.set(idV);
-            //list.set(new WiseSaying(idV, a, a))
-            
-
-            System.out.println("작가(기존) : " + ws.author);
-            System.out.print("작가 : ");
-            String atV  = sc.nextLine();
-            //list.set(idx,at_v);
-            list.set(idx, new WiseSaying(idV, atV, wsV));
-        } else  {
-            System.out.println(idV + " 번 명언은 존재하지 않습니다. ");
+                System.out.println("작가(기존) : " + ws.author);
+                System.out.print("작가 : ");
+                String atV  = sc.nextLine();
+                list.set(idx, new WiseSaying(idV, atV, wsV));
+            } else  {
+                System.out.println(idV + " 번 명언은 존재하지 않습니다. ");
+            }
         }
     }
-}
 
-class WiseSayingShowList {
+    class WiseSayingShowList {
 
-    public static void ShowList() {
-        System.out.println(" 번호 / 작가 / 명언 ");
-        System.out.println(" ---------------------- ");
-        for(int i = list.size()-1; i >= 0; i--) {
-            WiseSaying ws = list.get(i);
-            System.out.println(ws.id + " / " + ws.author + " / " + ws.wiseSaying);
+        public static void ShowList() {
+            System.out.println(" 번호 / 작가 / 명언 ");
+            System.out.println(" ---------------------- ");
+            for(int i = list.size()-1; i >= 0; i--) {
+                WiseSaying ws = list.get(i);
+                System.out.println(ws.id + " / " + ws.author + " / " + ws.wiseSaying);
+            }
         }
     }
-}
 }
