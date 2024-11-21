@@ -32,8 +32,12 @@ public class WiseSayingAddList {
                 bw.close();
 
                 bw = new BufferedWriter(new FileWriter(json_f,true));
+<<<<<<< HEAD
                 //bw.write("id : " + id + "\n" + "content : " + wise_saying_v + "\n" + "author : " + authur_v);
                 bw.write(json+"\n");
+=======
+                bw.write(json + "\n");
+>>>>>>> master
                 bw.close();
 
         } catch (IOException e) {

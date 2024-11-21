@@ -1,6 +1,7 @@
 [
 	{ 
 	 "id ": 1, 
+<<<<<<< HEAD
 	 "content ": "1",
 	 "authur": "2"
 	},
@@ -8,5 +9,19 @@
 	 "id ": 2, 
 	 "content ": "44",
 	 "authur": "33"
+=======
+	 "content ": "2",
+	 "authur": "1"
+	},
+	{ 
+	 "id ": 2, 
+	 "content ": "3",
+	 "authur": "2"
+	},
+	{ 
+	 "id ": 3, 
+	 "content ": "4",
+	 "authur": "3"
+>>>>>>> master
 	}
 ]

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 { "id ": 1, "content ": "1","authur": "2"}
 { "id ": 1, "content ": "1","authur": "2"}
 { "id ": 1, "content ": "1","authur": "2"}
@@ -9,3 +10,6 @@
 { "id ": 1, "content ": "1","authur": "2"}
 { "id ": 1, "content ": "222","authur": "333"}
 { "id ": 1, "content ": "1","authur": "2"}
+=======
+{ "id ": 1, "content ": "456","authur": "123"}
+>>>>>>> master
