@@ -25,6 +25,7 @@ public class WiseSayingBuild {
             }
             bw.write("\n]");
             bw.close();
+            System.out.println("data.json 파일의 내용이 갱신되었습니다.");
         } catch (Exception e) {
             System.out.println("하하 잘못됐지롱~");
         }

@@ -18,9 +18,5 @@ public class WiseSayingDelete {
             } else {
                 System.out.println(id_v + "번 명언은 존재하지 않습니다.");
             }
-
-
-
-
     }
 }

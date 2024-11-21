@@ -30,10 +30,8 @@ public class WiseSayingAddList {
                 BufferedWriter bw = new BufferedWriter(new FileWriter(id_f));
                 bw.write(Integer.toString(id));
                 bw.close();
-                bw = new BufferedWriter(new FileWriter(json_f,true));
-                //bw.write("id : " + id + "\n" + "content : " + wise_saying_v + "\n" + "author : " + authur_v);
+                bw = new BufferedWriter(new FileWriter(json_f));
                 bw.write(json+"\n");
-                bw.write(json + "\n");
                 bw.close();
 
         } catch (IOException e) {
