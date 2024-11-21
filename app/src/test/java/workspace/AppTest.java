@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import workspace.wisesaying.WiseSayingMain;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test void appHasAGreeting() throws Exception {
         App classUnderTest = new App();
         //assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
         new WiseSayingMain().Main();

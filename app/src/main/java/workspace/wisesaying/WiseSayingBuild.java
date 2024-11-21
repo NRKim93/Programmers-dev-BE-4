@@ -26,7 +26,6 @@ public class WiseSayingBuild {
             bw.write("\n]");
             bw.close();
         } catch (Exception e) {
-            // TODO: handle exception
             System.out.println("하하 잘못됐지롱~");
         }
     }
