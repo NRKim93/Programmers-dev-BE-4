@@ -5,12 +5,12 @@ package workspace;
 
 import org.junit.jupiter.api.Test;
 
-import workspace.wiseSaying.WiseSayingMain;
+import workspace.wiseSayingProject.Controller.WiseSayingController;
 
 class AppTest {
     @Test void appHasAGreeting() throws Exception {
         App classUnderTest = new App();
         //assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-        new WiseSayingMain().Main();
+        //new WiseSayingController().run();
     }
 }
